@@ -12,7 +12,7 @@ $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 body {
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
@@ -67,7 +67,7 @@ a {
 .content {
   position: relative;
   width: 1024px;
-  margin: 50px auto;
+  margin: 20px auto;
   @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
@@ -80,12 +80,12 @@ a {
 
 .content-hd {
   width: 100%;
-  padding: 30px 50px;
+  padding: 0px 50px;
   color: #fff;
-  background-color: $color-green;
+  // background-color: $color-green;
   overflow: hidden;
   @media screen and (max-width: 720px) {
-    padding: 25px 30px;
+    padding: 25px 20px;
   }
   @media print {
     color: #000;
@@ -105,9 +105,18 @@ a {
   .info,
   .contact {
     width: 50%;
+    color: #333333;
     @media screen and (max-width: 720px) {
       width: 100%;
       text-align: center;
+    }
+
+  }
+  .info {
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 8px;
     }
   }
   .name {
@@ -202,24 +211,24 @@ a {
 .content-bd {
   width: 100%;
   min-height: 200px;
-  padding: 20px 30px 50px;
+  padding: 20px 30px 30px;
   overflow: hidden;
   @media screen and (max-width: 720px) {
     padding: 20px 20px 50px;
   }
   .content-left,
   .content-right {
-    width: 50%;
+    // width: 50%;
     @media screen and (max-width: 1024px) {
       width: 100%;
     }
   }
-  .content-left {
-    float: left;
-  }
-  .content-right {
-    float: right;
-  }
+  // .content-left {
+  //   float: left;
+  // }
+  // .content-right {
+  //   float: right;
+  // }
   section {
     overflow: hidden;
     padding: 10px 15px;
@@ -236,6 +245,11 @@ a {
       li {
         margin-top: 8px;
         list-style: square inside;
+        
+        div {
+          font-size: 16px;
+          margin-top: 5px;
+        }
       }
     }
 
@@ -323,15 +337,9 @@ a {
     }
     strong {
       font-family: $font-family;
-      font-size: 12px;
-      line-height: 14px;
-      border: 1px solid #f3f3f3;
-      @include border-radius(3px);
-      font-weight: 500;
-      color: #444;
-      margin: 2px;
-      padding: 0 3px;
-      background-color: #f6f6f6;
+      font-size: 15px;
+     font-weight: bold;
+      // background-color: #f6f6f6;
     }
   }
   .practice {
