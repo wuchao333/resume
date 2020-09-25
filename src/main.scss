@@ -2,7 +2,7 @@
 @import "../node_modules/compass-mixins/lib/compass/css3";
 
 $color-gray: #d1d1d1;
-$color-green: #00b38a;
+$theme-color: #00b38a;
 $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
@@ -27,7 +27,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $color-green;
+  color: $theme-color;
   @include transition(all .2s ease-in-out);
 }
 
@@ -82,7 +82,7 @@ a {
   width: 100%;
   padding: 0px 50px;
   color: #fff;
-  // background-color: $color-green;
+  // background-color: $theme-color;
   overflow: hidden;
   @media screen and (max-width: 720px) {
     padding: 25px 20px;
@@ -93,7 +93,7 @@ a {
   }
   .title {
     width: 100%;
-    border-bottom: 2px solid darken($color-green, 2%);
+    border-bottom: 2px solid darken($theme-color, 2%);
     font-size: 52px;
     font-weight: 300;
     overflow: hidden;
@@ -154,7 +154,7 @@ a {
       display: inline-block;
       font-size: 24px;
       @media screen and (max-width: 720px) {
-        border-top: 1px solid darken($color-green, 2%);
+        border-top: 1px solid darken($theme-color, 2%);
         margin: 5px auto 0;
         padding: 10px;
       }
@@ -352,16 +352,16 @@ a {
 .btn {
   display: inline-block;
   padding: 0 5px;
-  border: 1px solid $color-green;
+  border: 1px solid $theme-color;
   border-radius: 3px;
-  color: $color-green;
+  color: $theme-color;
   font-family: Menlo, $font-family;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   &:hover {
     color: #fff;
-    background-color: $color-green;
+    background-color: $theme-color;
   }
 }
 
