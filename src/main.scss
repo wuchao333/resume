@@ -322,7 +322,6 @@ a {
   }
   .section-content {
     text-align: justify;
-    word-break: break-all;
     line-height: 22px;
     em {
       display: inline-block;
@@ -340,6 +339,15 @@ a {
       // font-size: 15px;
      font-weight: bold;
       // background-color: #f6f6f6;
+    }
+
+    .item-sub-list {
+      margin-left: 1rem;
+      ul {
+        li {
+          list-style: circle inside;
+        }
+      }
     }
   }
   .practice {

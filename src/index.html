@@ -11,11 +11,10 @@
 </head>
 
 <body>
-  <p class="last-modified">最后更新于2020年8月</p>
+  <p class="last-modified">最后更新于2021年7月</p>
   <a class="download-pdf" href="resume.pdf">下载 PDF</a>
 
   <main class="content">
-
     <!--基本信息-->
     <header class="content-hd">
       <section class="title">
@@ -25,8 +24,8 @@
       </section>
       <section class="info">
         <ul>
-          <li>求职意向：前端开发实习生</li>
-          <li>联系方式：152-7968-4857</li>
+          <li>求职意向：前端工程师</li>
+          <li>联系方式：<a href="tel:15279684857">152-7968-4857</a></li>
           <li>
             邮箱：<a href="mailto:phillzou@gmail.com">phillzou@gmail.com</a>
           </li>
@@ -75,14 +74,34 @@
             </div>
             <div class="item">
               <header class="item-hd">
+                <h2 class="item-name">实习经历（字节跳动）：</h2>
+                <a class="btn item-more">实习</a>
+              </header>
+              <div class="item-bd">
+                <div>2021.1 - 2021.6 在 TikTok 内容创作团队实习，参与 TikTok 运营平台的业务开发与技术改造，主导了性能优化、消灭 code smell、Oncall 改造等一系列工作。
+                </div>
+                <ul class="section-content">
+                  <li>技术栈：TypeScript + React + Mobx + Nodejs</li>
+                  <li>负责全站包大小优化，对 build 产物进行分析并逐步优化，最后减少 <strong> 50% Initial JS Size </strong>，页面加载速度从 4s 降至 2s</li>
+                  <li>主导消灭 code smell 工作，重构 2k 余行代码，消灭 <strong>code smell 700 余个</strong>，并制定 eslint 规范，降低 code review
+                    成本
+                  </li>
+                  <li>主导 Oncall 改造，开发一键 Oncall 功能，捕获错误日志，帮助研发人员快速定位问题，解决反馈，提高人效 </li>
+                  <li>参与项目的 TS 改造以及 Monorepo 迁移，编写文档，制定相应的类型规范</li>
+                  <li>编写提高工作效率的小工具，例如批量接口打标脚本，接口 mock 脚本等等，为开发提效，获得组内一直好评</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <header class="item-hd">
                 <h2 class="item-name">实习经历（阿里巴巴）：</h2>
                 <a class="btn item-more">实习</a>
               </header>
               <div class="item-bd">
                 <div>2020.6 - 2020.8 在手淘游戏互动部门实习，实现并落地淘金币超级抵钱模块，参与公司内部前端游戏引擎的无障碍插件开发，产出相应的插件和脚手架工具。</div>
-
                 <ul class="section-content">
-                  <li>开发游戏无障碍插件，为 Canvas 游戏区域添加无障碍能力</li>
+                  <li>开发游戏<a href="https://github.com/eva-engine/eva.js/tree/dev/packages/plugin-a11y">无障碍插件</a>，为
+                    Canvas 游戏区域添加无障碍能力</li>
                   <li>将无障碍插件落地应用至手淘金币庄园以及金币小镇业务，服务于 <strong>30 万</strong> 的手淘视障用户</li>
                   <li>产出插件开发脚手架，一键生成插件开发模板，减少配置时间，为开发提效</li>
                   <li>开发无障碍开启检测工具，能够检测手淘或者支付宝用户是否开启 ATs 读屏工具</li>
@@ -96,19 +115,45 @@
               </header>
               <div class="item-bd">
                 <ul class="section-content">
-                  <li><a href="https://github.com/Mayandev/morec">Morec</a>：一款精美的电影推荐 App，<strong>GitHub star 1k+</strong>。
-                    <div>○ 技术栈：Flutter + Django + MySQL</div>
-                    <div>○ 客户端使用 <strong>Flutter</strong> 框架构建，可分别编译 Android 以及 iOS 两端应用，实现了电影查询、电影详情、电影推荐等功能。
-                    <div>○ 服务端使用 <strong>Django</strong> 框架搭建，使用 crontab 生成系统定时任务进行定时推荐</div>
-                    <div>○ 推荐算法使用基于 item 的协同推荐，构建评分矩阵，计算相似度，得到电影推荐列表</div>
+                  <li><a href="https://github.com/Mayandev/morec">Morec</a>：一款精美的电影推荐 App，<strong>GitHub star
+                      1k+</strong>。
+                    <div class="item-sub-list">
+                      <ul>
+                        <li>技术栈：Flutter + Django + MySQL</li>
+                        <li>客户端使用 <strong>Flutter</strong> 框架构建，可分别编译 Android 以及 iOS 两端应用，实现了电影查询、电影详情、电影推荐等功能。</li>
+                        <li>服务端使用 <strong>Django</strong> 框架搭建，使用 crontab 生成系统定时任务进行定时推荐</li>
+                        <li>推荐算法使用基于 item 的协同推荐，构建评分矩阵，计算相似度，得到电影推荐列表</li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
                 <ul class="section-content">
-                  <li><a href="https://github.com/Mayandev/classmate-map">同学在哪儿</a>：一款设计精美，体验优良的地图信息展示小程序，用于展示毕业班级同学地域分布。
-                    <div>○ 技术栈：Taro + TypeScript + 云开发</div>
-                    <div>○ 使用 Sketch 独立设计 UI</div>
-                    <div>○ 使用 Canvas 进行图片压缩，节约 80% 带宽，提高地图组件图片绘制的效率</div>
-                    <div>○ 系统手写代码 <strong>2w</strong> 余行，可复用组件 <strong>10</strong> 余个， 支持微信、QQ、H5等多个入口</div>
+                  <li><a
+                      href="https://github.com/Mayandev/classmate-map">同学在哪儿</a>：一款设计精美，体验优良的地图信息展示小程序，用于展示毕业班级同学地域分布，目前
+                    <strong>GitHub
+                      star 40+ </strong>。
+                    <div class="item-sub-list">
+                      <ul>
+                        <li>技术栈：Taro + TypeScript + 云开发</li>
+                        <li>使用 Sketch 独立设计 UI，<a href="https://www.yuque.com/fevercode/preaui">查看设计稿</a></li>
+                        <li>使用 Canvas 进行图片压缩，节约 80% 带宽，提高地图组件图片绘制的效率</li>
+                        <li>系统手写代码 <strong>2w</strong> 余行，可复用组件 <strong>10</strong> 余个， 支持微信、QQ、H5等多个入口</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="section-content">
+                  <li><a href="https://github.com/Mayandev/hacker-feeds-cli">hacker-feeds-cli</a>：一个支持 i18n 的 node
+                    命令行工具，可以查看 Hacker News、Product Hunt、Reddit 等网站资讯流，<strong>GitHub star 100+</strong>。
+                  </li>
+                </ul>
+                <ul class="section-content">
+                  <li><a href="https://github.com/Mayandev/cycling">Cycling</a>：一个记录自己上海——武汉骑行轨迹的网站，利用 iOS
+                    快捷方式自动更新当前位置，触发 GitHub Action 绘制路线。
+                  </li>
+                </ul>
+                <ul class="section-content">
+                  <li><a href="https://shorten.pro/">gh-shourt-url</a>：一个端网址生成器，利用 GitHub issues 存储。
                   </li>
                 </ul>
               </div>
@@ -124,16 +169,25 @@
                 <p class="item-des">在校期间负责过一些校园和企业项目，其中包括：</p>
                 <ul class="section-content">
                   <li><a>程序题批改系统</a>，一个 Java Online Judge 系统。
-                    <div>○ 实现 Java 代码判题功能</div>
-                    <div>○ Webpack 编译打包，加快访问速度，解决加载白屏问题。</div>
-                    <div>○ 对内容进行转义过滤，有效<strong>防止 XSS 攻击</strong></div>
+                    <div class="item-sub-list">
+                      <ul>
+                        <li>实现 Java 代码判题功能</li>
+                        <li>Webpack 编译打包，加快访问速度，解决加载白屏问题</li>
+                        <li>对内容进行转义过滤，有效<strong>防止 XSS 攻击</strong></li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
-                    <a href="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/sungpu-1.png">甲壳虫软装</a>，为尚朴装饰材料有限公司上线的小程序电商平台。
-                    <div>○ 负责小程序的设计以及开发</div>
-                    <div>○ 实现商品列表的懒加载以及瀑布流展示功能</div>
-                    <div>○ 实现「场景配画」、「以图搜图」、「自助设计」等功能</div>
-                    <div>○ 实现商品规格选择功能，并对 <strong>sku 算法</strong>进行了优化</div>
+                    <a
+                      href="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/sungpu-1.png">甲壳虫软装</a>，为尚朴装饰材料有限公司上线的小程序电商平台。
+                    <div class="item-sub-list">
+                      <ul>
+                        <li>负责小程序的设计以及开发</li>
+                        <li>实现商品列表的懒加载以及瀑布流展示功能</li>
+                        <li>实现「场景配画」、「以图搜图」、「自助设计」等功能</li>
+                        <li>实现商品规格选择功能，并对 <strong>sku 算法</strong>进行了优化</li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -163,14 +217,14 @@
               </header>
               <div class="item-bd">
                 <ul class="section-content">
-                  <li>熟知JS基本语法与知识，熟练掌握模块化，面向对象，MVC等编程思想，具备各种框架等学习能力</li>
+                  <li>熟知 JavaScript 基本语法与知识，熟练掌握模块化，面向对象，MVC 等编程思想，具备各种框架等学习能力</li>
                   <li>学习 ES6/7 规范，对 ES6 新特性较为熟悉</li>
-                  <li>了解常见的数据结构与算法知识，能够使用 JS 实现常见的数据结构</li>
+                  <li>了解常见的数据结构与算法知识，能够使用 JavaScript 实现常见的数据结构</li>
                   <li>掌握前端流行框架 React、Flutter，了解 Vue</li>
                   <li>熟练使用 npm, Webpack 等工具</li>
                   <li>了解前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践</li>
-                  <li>掌握Java、Git、Python</li>
-                  <li>掌握关系型数据库基本概念与SQL</li>
+                  <li>掌握 Java、Git、Python</li>
+                  <li>掌握关系型数据库基本概念与 SQL</li>
                 </ul>
               </div>
             </div>
@@ -191,11 +245,12 @@
               </header>
               <div class="file-col">
                 <figure>
-                  <img class="file-col-image" src="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/sungpu-3.png"/>
+                  <img class="file-col-image" src="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/sungpu-3.png" />
                   <figcaption>甲壳虫软装小程序</figcaption>
                 </figure>
                 <figure>
-                  <img class="file-col-image" src="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/v2-6a783f32c467334cea900e06429ea943_1440w.jpg"/>
+                  <img class="file-col-image"
+                    src="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/v2-6a783f32c467334cea900e06429ea943_1440w.jpg" />
                   <figcaption>同学在哪儿小程序</figcaption>
                 </figure>
               </div>
