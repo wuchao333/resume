@@ -1,7 +1,9 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --open --hot",
-    "pub": "NODE_ENV=production webpack --config webpack-dist.config.js && rm -rf .public"
+    "pub": "NODE_ENV=production webpack --config webpack-dist.config.js && rm -rf .public",
+    "format": "prettier --write '**/*.js'  '**/*.md' '**/*.scss' '**/*.html'",
+    "check": "prettier --check '**/*.js' '**/*.md' '**/*.scss' '**/*.html'"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -13,6 +15,7 @@
     "gh-pages": "^1.0.0",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
+    "prettier": "2.3.2",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.0",
     "web-webpack-plugin": "^1.9.3",

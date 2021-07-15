@@ -1,9 +1,9 @@
-@import "../node_modules/compass-mixins/lib/compass/reset";
-@import "../node_modules/compass-mixins/lib/compass/css3";
+@import '../node_modules/compass-mixins/lib/compass/reset';
+@import '../node_modules/compass-mixins/lib/compass/css3';
 
 $color-gray: #d1d1d1;
 $theme-color: #00b38a;
-$font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+$font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', sans-serif;
 
 * {
   @include box-sizing(border-box);
@@ -28,7 +28,7 @@ body {
 a {
   text-decoration: none;
   color: $theme-color;
-  @include transition(all .2s ease-in-out);
+  @include transition(all 0.2s ease-in-out);
 }
 
 .last-modified {
@@ -110,7 +110,6 @@ a {
       width: 100%;
       text-align: center;
     }
-
   }
   .info {
     margin-top: 20px;
@@ -122,7 +121,8 @@ a {
   .name {
     float: left;
     h1 {
-      font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
+      font-family: 'Lucida Grande', 'Hiragino Sans GB', 'Hiragino Sans GB W3',
+        $font-family;
       font-weight: 500;
       letter-spacing: 5px;
       @media screen and (max-width: 720px) {
@@ -184,7 +184,8 @@ a {
           @media print {
             color: #000;
           }
-          font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
+          font-family: 'Lucida Grande', 'Hiragino Sans GB',
+            'Hiragino Sans GB W3', $font-family;
           font-size: 14px;
           line-height: 22px;
           &:hover {
@@ -245,7 +246,7 @@ a {
       li {
         margin-top: 8px;
         list-style: square inside;
-        
+
         div {
           font-size: 16px;
           margin-top: 5px;
@@ -337,7 +338,7 @@ a {
     strong {
       font-family: $font-family;
       // font-size: 15px;
-     font-weight: bold;
+      font-weight: bold;
       // background-color: #f6f6f6;
     }
 
@@ -423,4 +424,3 @@ figcaption {
     display: none;
   }
 }
-

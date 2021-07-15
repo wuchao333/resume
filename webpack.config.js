@@ -2,7 +2,6 @@ const path = require('path');
 const { WebPlugin } = require('web-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-
 module.exports = {
   output: {
     publicPath: '',
@@ -21,9 +20,9 @@ module.exports = {
         // 提取出css
         loaders: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+          use: ['css-loader', 'sass-loader'],
         }),
-        include: path.resolve(__dirname, 'src')
+        include: path.resolve(__dirname, 'src'),
       },
       {
         test: /\.css$/,
@@ -37,7 +36,7 @@ module.exports = {
         test: /\.(gif|png|jpe?g|eot|woff|ttf|svg|pdf)$/,
         loader: 'base64-inline-loader',
       },
-    ]
+    ],
   },
   entry: {
     main: './src/main.js',

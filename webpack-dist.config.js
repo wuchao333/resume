@@ -17,7 +17,7 @@ function publishGhPages() {
       } else {
         resolve();
       }
-    })
+    });
   });
 }
 
@@ -42,9 +42,9 @@ module.exports = {
         loaders: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           // 压缩css
-          use: ['css-loader?minimize', 'postcss-loader', 'sass-loader']
+          use: ['css-loader?minimize', 'postcss-loader', 'sass-loader'],
         }),
-        include: path.resolve(__dirname, 'src')
+        include: path.resolve(__dirname, 'src'),
       },
       {
         test: /\.css$/,
@@ -59,7 +59,7 @@ module.exports = {
         test: /\.(gif|png|jpe?g|eot|woff|ttf|svg|pdf)$/,
         loader: 'base64-inline-loader',
       },
-    ]
+    ],
   },
   entry: {
     main: './src/main.js',
@@ -67,8 +67,8 @@ module.exports = {
   plugins: [
     new DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
+        NODE_ENV: JSON.stringify('production'),
+      },
     }),
     new UglifyJsPlugin({
       // 最紧凑的输出
@@ -84,7 +84,7 @@ module.exports = {
         collapse_vars: true,
         // 提取出出现多次但是没有定义成变量去引用的静态值
         reduce_vars: true,
-      }
+      },
     }),
     new WebPlugin({
       template: './src/index.html',
@@ -100,5 +100,5 @@ module.exports = {
 
       await publishGhPages();
     }),
-  ]
+  ],
 };
